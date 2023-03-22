@@ -3,26 +3,31 @@
     <head>
         <title>calculator</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="javascript.js"></script>
+        <script src="javascript.js" defer></script>
     </head>
     <body>
-        <div class="grid">
-            <input type="text" readonly>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>/</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>*</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button>
-            <button id="blank">0</button>
-            <button>=</button>
-            <button>+</button> 
+        <div class="container">
+            <div class="textArea">
+                <input type="text" readonly>
+            </div>
+            <div class="buttons">
+                <button class="orange in" data-value="7">7</button>
+                <button class="orange in" data-value="8">8</button>
+                <button class="orange in" data-value="9">9</button>
+                <button class="blue in" data-value="/">÷</button>
+                <button class="orange in" data-value="4">4</button>
+                <button class="orange in" data-value="5">5</button>
+                <button class="orange in" data-value="6">6</button>
+                <button class="blue in" data-value="*">×</button>
+                <button class="orange in" data-value="1">1</button>
+                <button class="orange in" data-value="2">2</button>
+                <button class="orange in" data-value="3">3</button>
+                <button class="blue in" data-value="-">－</button>
+                <button class="orange in" data-value="0">0</button>
+                <button class="blank"></button>
+                <button class="blue func" data-value="=">=</button>
+                <button class="blue in" data-value="+">+</button> 
+            </div>
         </div>
     </body>
 </html>
