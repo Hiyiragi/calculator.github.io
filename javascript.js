@@ -13,7 +13,7 @@ for (const inButton of inButtons) {
 
 for (const funcButton of funcButtons) {
     funcButton.addEventListener("click", function(){
-        let val = this.getAttribute("data-value")
+        textArea.value = eval(textArea.value);
     });
 
 }
